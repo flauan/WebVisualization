@@ -1,0 +1,74 @@
+#cont1-fmt {background-color:lightblue; padding:20px 20px 20px 20px}
+
+#div1-fmt {background-color: lightblue}
+
+#img1left {
+  float:left;
+  width:40%;
+  padding: 20px;
+  margin-bottom: 10px;  
+  border:hidden;
+}
+
+#img1top {
+  float:top;
+  /*width:75%;*/
+  padding: 20px;
+  margin-bottom: 10px;  
+  border:hidden;
+}
+
+#par1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+
+.panhd1-fmt {
+    font-family: "Times New Roman", Times, serif;    
+    font-size: 1.5em;
+    color:blue;
+    font-weight: bold;
+} 
+
+
+.panhd2-fmt {
+    font-family: "Times New Roman", Times, serif;    
+    font-size: 1.5em;
+    color:blue;
+    font-weight: bold;
+} 
+
+
+#panbody1 {
+    width: 500px;
+    margin: auto;
+    /*border: 3px solid #73AD21;*/
+}
+
+
+#middle {
+  float:left;
+  width:10%;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #888;
+}
+
+#right {
+  float:right;
+  width:50%;
+  /*padding: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #666;*/
+}
+
+
+#imgalign {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, ini<body>tial-scale=1">
+
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="WebVis_Style.css">
+
+    <!-- Latest compiled and minified JavaScript THIS WILL SOLVE DROPDOWN-->
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+    <!-- Main Container with 800 pixel width -->
+    <div class="container" style="width:1100px">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!--START Brand -->
+                <div class="container-fluid navbar-left">
+                    <div class="navbar-header">
+                    <a href="WebVis_WeatherPy.html" class="navbar-brand" style="background: lightblue;color:black;font-weight:bold;font-family: Times, serif">Latitude                        
+                    </a>
+                    </div>
+                </div>
+                <!--END -->
+
+                <!-- START Plots Comparison Data Menu -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">                    
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="WebVis_MaxTemp.html">Max Temperature</a></li>
+                            <li><a href="WebVis_Humidity.html">Humidity</a></li>
+                            <li><a href="WebVis_Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="WebVis_WindSpeed.html">Wind Speed</a></li>
+                            <!--<li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>-->
+                        </ul>
+                        </li>
+                        <li><a href="WebVis_Comparison.html">Comparison</a></li>
+                        <li><a href="WebVis_Data.html">Data</a></li>
+                    </ul>                             
+                    <!--END       -->
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container" id="cont1-fmt">
+            <div class="row">
+                <div class="col-sm-8" >                
+                    <div class="panel panel-default">
+                        <div class="panel-heading panhd1-fmt">Summary: Latitude vs. X</div>
+                        <div class="panel-body">                                                                                    
+                            <p><img src="output_7_0.png" alt="Placeholder" class="img-thumbnail" height=200 width=200 id="img1left">The purpose of the project was to analyze how weather changes as you get closer to the equator. To accomplish this 
+                                analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                            </p>
+                            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we 
+                                looked at included: temperature, cloudiness, wind speed, and humidity. This sites provides the source data and 
+                                visualizations created as part of the analysis, as well as explanation and description of any trends and 
+                                correlations witnessed.
+                            </p>                    
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4" id="div-fmt">                           
+                    <div class="panel panel-default">
+                        <div class="panel-heading panhd2-fmt">Visualization</div>
+                        <div class="panel-body">  
+                            
+                                <div class="col-sm-6">                                    
+                                    <a href="WebVis_MaxTemp.html"><img src="output_7_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;margin:6px 3px"></a>                                    
+                                    <!--<img src="output_7_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;">-->                                    
+                                    
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="WebVis_Humidity.html"><img src="output_8_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;margin:6px 3px"></a>                                    
+                                    <!--<img src="output_8_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;">-->                                    
+                                    
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="WebVis_Cloudiness.html"><img src="output_9_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;margin:6px 3px"></a>                                                                        
+                                    <!--<img src="output_9_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;">-->
+                                    
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="WebVis_WindSpeed.html"><img src="output_10_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;margin:6px 3px"></a>                                                                                                            
+                                    <!--<img src="output_10_0.png" alt="Placeholder" class="img-thumbnail" style="width:100px;height:90px;">-->
+                                    
+                                </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" style="padding:10px;border:hidden">            
+            <div class="panel-heading panhd2-fmt" style="font-family: Times, serif;font-size: 1em;font-weight:normal;text-align:center">
+                &copy;Copyright Coding Bootcamp 2017
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
